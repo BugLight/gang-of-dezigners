@@ -1,4 +1,4 @@
-# Gang of designers Home page
+# Gang of Dezigners Home page
 
 ## Team
 
