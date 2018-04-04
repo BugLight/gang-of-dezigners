@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+  position: fixed;
+  padding-top: 10px;
+  border-bottom: 2px solid black;
+  background: transparent;
+}
+
+.header__team-name {
+  font-family: Trajan Pro;
+  font-size: 40px;
+  font-weight: 900;
+}
