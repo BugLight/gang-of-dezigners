@@ -1,6 +1,8 @@
 const path = require('path');
+
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './src/main.js',
@@ -23,6 +25,13 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'index.html',
             inject: true
-        })
+        }),
+        new CopyWebpackPlugin([
+            {
+                from: 'static',
+                to: 'static',
+                ignore: ['.*']
+            }
+        ])
     ]
 };
