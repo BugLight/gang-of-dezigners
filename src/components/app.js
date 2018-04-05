@@ -13,7 +13,8 @@ export default {
 	    		first: 'Петр',
 	    		last: 'Толкунов',
 	    		group: 'ИУ8-41',
-	    		desc: 'студент бомонки'
+	    		desc: 'студент бомонки',
+                photo: '/static/maket.jpg'
 	    	}
     	};
     },
@@ -25,7 +26,8 @@ export default {
                 first={this.info.first}
                 last={this.info.last}
                 group={this.info.group}
-                desc={this.info.desc}>
+                desc={this.info.desc}
+                photo={this.info.photo}>
             </member>
         </div>;
     }

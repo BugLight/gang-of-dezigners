@@ -1,5 +1,6 @@
 body {
   background-color: white;
+  padding-top: 80px;
 }
 
 .header {
@@ -25,4 +26,13 @@ body {
   letter-spacing: 0.15em;
   font-size: 6vmin;
   font-weight: 900;
+}
+
+.member {
+    text-align: center;
+}
+
+.member__photo {
+    position: absolute;
+    z-index: -1;
 }
