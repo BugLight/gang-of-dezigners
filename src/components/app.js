@@ -8,19 +8,25 @@ export default {
     },
     data : function() {
     	return {
-    			info : {
-	    		"nick" : "pettro98",
-	    		"first" : "Петр",
-	    		"second" : "Толкунов",
-	    		"group" : "ИУ8-41",
-	    		"desc" : "студент бомонки"
+			info: {
+	    		nick: 'pettro98',
+	    		first: 'Петр',
+	    		last: 'Толкунов',
+	    		group: 'ИУ8-41',
+	    		desc: 'студент бомонки'
 	    	}
-    	}
+    	};
     },
     render (h) {
         return <div>
             <app-header></app-header>
-            <member v-bind="info"></member>
+            <member
+                nick={this.info.nick}
+                first={this.info.first}
+                last={this.info.last}
+                group={this.info.group}
+                desc={this.info.desc}>
+            </member>
         </div>;
     }
 };
