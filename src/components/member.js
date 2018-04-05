@@ -1,14 +1,14 @@
 export default {
-	props : ['nick', 'first', 'last', 'group', 'desc', 'photo'],
+	props : ['info'],
     computed: {
         fullname () {
-            return this.first + ' ' + this.last;
+            return this.info.first + ' ' + this.info.last;
         }
     },
 	render (h) {
 		return <div class="member">
-            <img class="member__photo" src={this.photo}/>
-    		<h1 class="member__nick">{this.nick}</h1>
+            <img class="member__photo" src={this.info.photo}/>
+            <h1 class="member__nick">{this.info.nick}</h1>
 		</div>;
 	}
 }

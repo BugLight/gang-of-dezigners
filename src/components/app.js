@@ -8,7 +8,7 @@ export default {
     },
     data : function() {
     	return {
-			info: {
+			data: {
 	    		nick: 'pettro98',
 	    		first: 'Петр',
 	    		last: 'Толкунов',
@@ -21,14 +21,7 @@ export default {
     render (h) {
         return <div>
             <app-header></app-header>
-            <member
-                nick={this.info.nick}
-                first={this.info.first}
-                last={this.info.last}
-                group={this.info.group}
-                desc={this.info.desc}
-                photo={this.info.photo}>
-            </member>
+            <member info={this.data}></member>
         </div>;
     }
 };
