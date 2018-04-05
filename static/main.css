@@ -26,3 +26,18 @@ body {
   font-size: 6vmin;
   font-weight: 900;
 }
+
+.member-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    list-style: none;
+}
+
+.member-list > li {
+    display: block;
+    flex-basis: 25%;
+}
