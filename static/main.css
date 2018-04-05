@@ -5,7 +5,8 @@
 
 body {
     background-color: white;
-    padding-top: calc(7vmin + 2vh);
+    padding-top: calc(7vmin + 2.2vh);
+    border: 1px dashed blue;
 }
 
 .header {
@@ -19,6 +20,7 @@ body {
     background-color: #37da7e;
     box-shadow: 0px 4px 20px -5px #000;
     text-align: center;
+    background: transparent;
 }
 
 @font-face {
