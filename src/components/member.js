@@ -1,13 +1,22 @@
 export default {
-	props : ['info'],
+	props : ['info', 'inactive'],
     computed: {
         fullname () {
             return this.info.first + ' ' + this.info.last;
         }
     },
+    methods: {
+        mouseOver () {
+            this.$emit('focused');
+        },
+        mouseLeave () {
+            this.$emit('unfocused');
+        }
+    },
 	render (h) {
-		return <div class="member">
+		return <div onMouseover={this.mouseOver} onMouseleave={this.mouseLeave} class="member">
             <img class="member__photo" src={this.info.photo}/>
+                {this.inactive ? <div class="member__filter"></div> : null}
             <h1 class="member__nick">{this.info.nick}</h1>
 		</div>;
 	}
