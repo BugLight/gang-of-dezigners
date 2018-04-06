@@ -104,22 +104,24 @@ body {
  }
 
 .footer__copyright {
-    position: absolute;
-    vertical-align: middle;
-    left: 40px;
-    top: 20px;
-    color: #000000; /* первоначальный мне не понравился*/
+  position: absolute;
+  vertical-align: middle;
+  left: 40px;
+  top: 20px;
+  color: #333; /* первоначальный мне не понравился*/
 }
 
 .footer__github {
-    position: absolute;
-    text-align: center;
-    top: 20px;
-    right: 60px;
-    /* todo
-    подумать о цвете и шрифте
-    в copyright тоже
-    */
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  right: 60px;
+  color: #333;
+  text-decoration: none;
+  /* todo
+  подумать о цвете и шрифте
+  в copyright тоже
+  */
 }
 
 .footer__octopus {
