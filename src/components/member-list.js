@@ -13,7 +13,8 @@ export default {
                     last: '',
                     group: '',
                     desc: '',
-                    photo: '/static/img/talkytitan5127.jpg'
+                    photo: '/static/img/talkytitan5127.jpg',
+                    inactive: false
                 },
                 {
                     nick: 'pettro98',
@@ -21,7 +22,8 @@ export default {
                     last: '',
                     group: '',
                     desc: '',
-                    photo: '/static/img/pettro98.jpg'
+                    photo: '/static/img/pettro98.jpg',
+                    inactive: false
                 },
                 {
                     nick: 'h1kk4',
@@ -29,7 +31,8 @@ export default {
                     last: '',
                     group: '',
                     desc: '',
-                    photo: '/static/img/h1kk42.jpg'
+                    photo: '/static/img/h1kk42.jpg',
+                    inactive: false
                 },
                 {
                     nick: 'buglight',
@@ -37,14 +40,30 @@ export default {
                     last: 'Жуков',
                     group: '',
                     desc: '',
-                    photo: '/static/img/buglight.png'
+                    photo: '/static/img/buglight.png',
+                    inactive: false
                 }
-            ]
+            ],
         };
+    },
+    methods: {
+        focus (member) {
+            this.members.forEach(m => {
+                if (m !== member)
+                    m.inactive = true;
+            });
+        },
+        unfocus () {
+            this.members.forEach(m => {
+                m.inactive = false;
+            });
+        }
     },
     render (h) {
         return <ul class="member-list">
-            {this.members.map(m => <li><member info={m}></member></li>)}
+            {this.members.map(m => <li>
+                <member onFocused={() => this.focus(m)} onUnfocused={this.unfocus} info={m} inactive={m.inactive}></member>
+            </li>)}
         </ul>;
     }
 };
