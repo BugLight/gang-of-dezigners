@@ -16,7 +16,9 @@ export default {
 	render (h) {
 		return <div onMouseover={this.mouseOver} onMouseleave={this.mouseLeave} class="member">
             <img class="member__photo" src={this.info.photo}/>
+            <transition name="fade">
                 {this.inactive ? <div class="member__filter"></div> : null}
+            </transition>
             <h1 class="member__nick">{this.info.nick}</h1>
 		</div>;
 	}

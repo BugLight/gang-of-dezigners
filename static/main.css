@@ -103,6 +103,14 @@ body {
     background-color: rgba(52,80,70,0.6);
 }
 
+.fade-enter-active, .fade-leave-active {
+    transition: all 1s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
 .footer {
     background-color: #37da7e;
     bottom: 0;
