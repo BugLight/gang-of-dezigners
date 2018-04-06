@@ -76,6 +76,7 @@ body {
     overflow: hidden;
     height: inherit;
     max-height: inherit;
+    cursor: pointer;
 }
 
 .member__nick {
