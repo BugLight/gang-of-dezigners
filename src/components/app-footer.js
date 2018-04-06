@@ -1,7 +1,6 @@
 export default {
   render(h) {
-    return 
-      <footer class="footer">
+    return <footer class="footer">
         <div class="footer_obj">
           <span class="footer__copyright">© 2018 Gang of Designers</span>
           <img
