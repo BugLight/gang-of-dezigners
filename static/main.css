@@ -33,30 +33,49 @@ body {
 }
 
 .header__team-name {
-    font-family: "SignPainter HouseScript";
+    font-family: 'SignPainter HouseScript';
     letter-spacing: 0.15em;
     font-size: 6vmin;
     font-weight: 900;
 }
 
+.member-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    height: 50vw;
+    max-height: calc(100vh - 60px - 7vmin - 2.2vh);
+}
+
+.member-list > li {
+    display: block;
+    flex-basis: 25%;
+    max-height: inherit;
+    height: inherit;
+}
+
 .footer {
-  background-color: #37da7e;
-  height: 60px;
-  color: #00b64f;
-  /* pin to bottom */
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+    background-color: #37da7e;
+    height: 60px;
+    color: #00b64f;
+    /* pin to bottom */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer_obj {
-  position: relative;
+    position: relative;
 }
 
 .member {
-    display: inline-block;
+    display: block;
     position: relative;
     text-align: center;
+    overflow: hidden;
+    height: inherit;
+    max-height: inherit;
 }
 
 .member__nick {
@@ -68,7 +87,9 @@ body {
 }
 
 .member__photo {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: -1;
 }
@@ -83,26 +104,26 @@ body {
  }
 
 .footer__copyright {
-  position: absolute;
-  vertical-align: middle;
-  left: 40px;
-  top: 20px;
-  color: #000000; /* первоначальный мне не понравился*/
+    position: absolute;
+    vertical-align: middle;
+    left: 40px;
+    top: 20px;
+    color: #000000; /* первоначальный мне не понравился*/
 }
 
 .footer__github {
-  position: absolute;
-  text-align: center;
-  top: 20px;
-  right: 60px;
-  /* todo
-  подумать о цвете и шрифте
-  в copyright тоже
-  */
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    right: 60px;
+    /* todo
+    подумать о цвете и шрифте
+    в copyright тоже
+    */
 }
 
 .footer__octopus {
-  position: absolute;
-  top: 15px;
-  right: 289px;
+    position: absolute;
+    top: 15px;
+    right: 289px;
 }
