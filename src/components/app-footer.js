@@ -3,7 +3,7 @@ export default {
     return <footer class="footer">
         <span class="footer__copyright">© 2018 Gang of Designers</span>
         <img
-        class="footer__github"
+        class="footer__octopus"
           src="/static/github-logo-black.png"
           alt="Git:"
           height="30"

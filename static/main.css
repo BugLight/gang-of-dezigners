@@ -49,6 +49,20 @@ body {
     flex-basis: 25%;
 }
 
+.footer {
+  background-color: #37da7e;
+  height: 60px;
+  color: #00b64f;
+  /* pin to bottom */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer_obj {
+  position: relative;
+}
+
 .member {
     display: inline-block;
     position: relative;
@@ -71,16 +85,33 @@ body {
 .footer {
     background-color: #37da7e;
     bottom: 0;
-    height: 50px;
+    height: 60px;
     text-align: center;
     vertical-align: middle;
     color: #00b64f;
  }
 
 .footer__copyright {
-    vertical-align: middle;
+  position: absolute;
+  vertical-align: middle;
+  left: 40px;
+  top: 20px;
+  color: #000000; /* первоначальный мне не понравился*/
 }
 
 .footer__github {
-    vertical-align: middle;
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  right: 60px;
+  /* todo
+  подумать о цвете и шрифте
+  в copyright тоже
+  */
+}
+
+.footer__octopus {
+  position: absolute;
+  top: 15px;
+  right: 289px;
 }
