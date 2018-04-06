@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url("/static/Roboto-Regular.ttf");
+}
+
 body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
@@ -51,17 +56,17 @@ body {
 }
 
 .footer {
-  background-color: #37da7e;
-  height: 60px;
-  color: #00b64f;
-  /* pin to bottom */
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+    background-color: #37da7e;
+    height: 60px;
+    color: #00b64f;
+    /* pin to bottom */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer_obj {
-  position: relative;
+    position: relative;
 }
 
 .member {
@@ -78,6 +83,7 @@ body {
     margin: 0;
     bottom: 20px;
     width: 100%;
+
 }
 
 .member__photo {
@@ -98,26 +104,26 @@ body {
  }
 
 .footer__copyright {
-  position: absolute;
-  vertical-align: middle;
-  left: 40px;
-  top: 20px;
-  color: #000000; /* первоначальный мне не понравился*/
+    position: absolute;
+    vertical-align: middle;
+    left: 40px;
+    top: 20px;
+    color: #000000; /* первоначальный мне не понравился*/
 }
 
 .footer__github {
-  position: absolute;
-  text-align: center;
-  top: 20px;
-  right: 60px;
-  /* todo
-  подумать о цвете и шрифте
-  в copyright тоже
-  */
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    right: 60px;
+    /* todo
+    подумать о цвете и шрифте
+    в copyright тоже
+    */
 }
 
 .footer__octopus {
-  position: absolute;
-  top: 15px;
-  right: 289px;
+    position: absolute;
+    top: 15px;
+    right: 289px;
 }
