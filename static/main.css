@@ -66,11 +66,12 @@ body {
     position: relative;
     width: 100%;
     z-index: -1;
+}
 
 .footer {
     background-color: #37da7e;
     bottom: 0;
-    height: 50px;
+    height: 60px;
     text-align: center;
     vertical-align: middle;
     color: #00b64f;
@@ -98,5 +99,5 @@ body {
 .footer__octopus {
   position: absolute;
   top: 15px;
-  right: 269px;
+  right: 289px;
 }
