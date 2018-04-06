@@ -37,22 +37,24 @@ body {
 .member-list {
     margin: 0;
     padding: 0;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-content: stretch;
+    position: relative;
     list-style: none;
+    min-height: 500px;
 }
 
 .member-list > li {
     display: block;
     flex-basis: 25%;
+    min-height: inherit;
 }
 
 .member {
-    display: inline-block;
+    display: block;
     position: relative;
     text-align: center;
+    overflow: hidden;
+    min-height: inherit;
 }
 
 .member__nick {
@@ -63,9 +65,12 @@ body {
 }
 
 .member__photo {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: -1;
+}
 
 .footer {
     background-color: #37da7e;
