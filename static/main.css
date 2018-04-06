@@ -1,5 +1,6 @@
 body {
   background-color: white;
+  font-family: 'Roboto', sans-serif;
   padding-top: 80px;
 }
 
@@ -29,10 +30,20 @@ body {
 }
 
 .member {
+    display: inline-block;
+    position: relative;
     text-align: center;
 }
 
-.member__photo {
+.member__nick {
     position: absolute;
+    margin: 0;
+    bottom: 20px;
+    width: 100%;
+}
+
+.member__photo {
+    position: relative;
+    width: 100%;
     z-index: -1;
 }
