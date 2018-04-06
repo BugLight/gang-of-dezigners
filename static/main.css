@@ -82,7 +82,7 @@ body {
   vertical-align: middle;
   left: 40px;
   top: 20px;
-  color: #000000; /* первоначальный мне не понравился*/
+  color: #333; /* первоначальный мне не понравился*/
 }
 
 .footer__github {
@@ -90,6 +90,8 @@ body {
   text-align: center;
   top: 20px;
   right: 60px;
+  color: #333;
+  text-decoration: none;
   /* todo
   подумать о цвете и шрифте
   в copyright тоже
