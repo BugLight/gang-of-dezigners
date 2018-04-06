@@ -1,31 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  background-color: white;
-  font-family: 'Roboto', sans-serif;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    padding-top: calc(7vmin + 2.2vh);
 }
 
 .header {
-  margin: 0px;
-  padding: 1vh 0;
-  top: 0px;
-  right: -10px;
-  left: -10px;
-  position: fixed;
-  color: white;
-  background-color: #37DA7E;
-  box-shadow: 0px 4px 20px -5px #000;
-  text-align: center;
+    margin: 0px;
+    padding: 1vh 0;
+    top: 0px;
+    right: -10px;
+    left: -10px;
+    position: fixed;
+    color: white;
+    background-color: #37da7e;
+    box-shadow: 0px 4px 20px -5px #000;
+    text-align: center;
 }
 
 @font-face {
-  font-family: 'SignPainter HouseScript';
-  src: url('/static/signpainter-housescript.ttf');
+    font-family: "SignPainter HouseScript";
+    src: url("/static/signpainter-housescript.ttf");
 }
 
 .header__team-name {
-  font-family: 'SignPainter HouseScript';
-  letter-spacing: 0.15em;
-  font-size: 6vmin;
-  font-weight: 900;
+    font-family: "SignPainter HouseScript";
+    letter-spacing: 0.15em;
+    font-size: 6vmin;
+    font-weight: 900;
 }
 
 .member {
@@ -45,4 +51,20 @@ body {
     position: relative;
     width: 100%;
     z-index: -1;
+
+.footer {
+    background-color: #37da7e;
+    bottom: 0;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    color: #00b64f;
+ }
+
+.footer__copyright {
+    vertical-align: middle;
+}
+
+.footer__github {
+    vertical-align: middle;
 }
