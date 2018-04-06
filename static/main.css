@@ -5,7 +5,8 @@
 
 body {
     background-color: white;
-    padding-top: calc(7vmin + 2vh);
+    font-family: 'Roboto', sans-serif;
+    padding-top: calc(7vmin + 2.2vh);
 }
 
 .header {
@@ -46,4 +47,39 @@ body {
 .member-list > li {
     display: block;
     flex-basis: 25%;
+}
+
+.member {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.member__nick {
+    position: absolute;
+    margin: 0;
+    bottom: 20px;
+    width: 100%;
+}
+
+.member__photo {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+
+.footer {
+    background-color: #37da7e;
+    bottom: 0;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    color: #00b64f;
+ }
+
+.footer__copyright {
+    vertical-align: middle;
+}
+
+.footer__github {
+    vertical-align: middle;
 }
