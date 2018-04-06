@@ -6,6 +6,7 @@ export default {
     },
     data () {
         return {
+            activeMember: null,
             members: [
                 {
                     nick: 'talkytitan5127',
@@ -42,9 +43,19 @@ export default {
             ]
         };
     },
+    methods: {
+        setActive (member) {
+            this.activeMember = member;
+        }
+    },
     render (h) {
-        return <ul class="member-list">
-            {this.members.map(m => <li><member info={m}></member></li>)}
-        </ul>;
+        return <transition name="member-list" mode="out-in">
+            {!this.activeMember ? <ul class="member-list">
+                {this.members.map(m => <li key={m.nick}><member nativeOnClick={() => {this.setActive(m)}} info={m}></member></li>)}
+            </ul> : null}
+            {this.activeMember ? <div class="member-wrapper">
+                <member info={this.activeMember}></member>
+            </div> : null}
+        </transition>;
     }
 };

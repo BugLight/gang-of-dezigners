@@ -12,6 +12,7 @@ body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
     padding-top: calc(7vmin + 2.2vh);
+    overflow-x: hidden;
 }
 
 .header {
@@ -39,6 +40,12 @@ body {
     font-weight: 900;
 }
 
+.member-wrapper {
+    height: 50vw;
+    max-height: calc(100vh - 60px - 7vmin - 2.2vh);
+    width: 25%;
+}
+
 .member-list {
     margin: 0;
     padding: 0;
@@ -46,6 +53,15 @@ body {
     list-style: none;
     height: 50vw;
     max-height: calc(100vh - 60px - 7vmin - 2.2vh);
+}
+
+.member-list-enter, .member-list-leave-to {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.member-list-enter-active, .member-list-leave-active {
+    transition: all 1s ease;
 }
 
 .member-list > li {
