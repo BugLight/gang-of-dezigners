@@ -1,4 +1,5 @@
 import app_header from './app-header'
+import member from './member'
 import app_footer from './app-footer'
 
 export default {
@@ -10,6 +11,6 @@ export default {
         return <div>
             <app-header></app-header>
             <app-footer></app-footer>
-          </div>;
+        </div>;
     }
 };
