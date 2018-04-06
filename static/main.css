@@ -14,6 +14,14 @@ body {
     padding-top: calc(7vmin + 2.2vh);
 }
 
+a {
+    color: #333;
+}
+
+a:visited {
+    color: #666;
+}
+
 .header {
     margin: 0px;
     padding: 1vh 0;
@@ -55,20 +63,6 @@ body {
     height: inherit;
 }
 
-.footer {
-    background-color: #37da7e;
-    height: 60px;
-    color: #00b64f;
-    /* pin to bottom */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer_obj {
-    position: relative;
-}
-
 .member {
     display: block;
     position: relative;
@@ -98,34 +92,23 @@ body {
     background-color: #37da7e;
     bottom: 0;
     height: 60px;
-    text-align: center;
-    vertical-align: middle;
-    color: #00b64f;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
  }
 
 .footer__copyright {
-  position: absolute;
-  vertical-align: middle;
-  left: 40px;
-  top: 20px;
-  color: #333; /* первоначальный мне не понравился*/
+    padding-left: 20px;
 }
 
 .footer__github {
-  position: absolute;
-  text-align: center;
-  top: 20px;
-  right: 60px;
-  color: #333;
-  text-decoration: none;
-  /* todo
-  подумать о цвете и шрифте
-  в copyright тоже
-  */
+  text-align: right;
+  padding-right: 20px;
 }
 
-.footer__octopus {
-    position: absolute;
-    top: 15px;
-    right: 289px;
+.footer__github > * {
+    vertical-align: middle;
 }
