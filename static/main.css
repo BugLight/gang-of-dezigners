@@ -53,6 +53,7 @@ body {
     flex-basis: 25%;
     max-height: inherit;
     height: inherit;
+    position: relative;
 }
 
 .footer {
@@ -91,7 +92,11 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: -1;
+    transition: all 1.5s ease-out;
+}
+
+.member__photo:hover {
+  transform: scale(1.4);
 }
 
 .footer {
