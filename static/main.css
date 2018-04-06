@@ -39,13 +39,15 @@ body {
     padding: 0;
     display: flex;
     list-style: none;
-    min-height: calc(100vh - 60px - 7vmin - 2.2vh);
+    height: 50vw;
+    max-height: calc(100vh - 60px - 7vmin - 2.2vh);
 }
 
 .member-list > li {
     display: block;
     flex-basis: 25%;
-    min-height: inherit;
+    max-height: inherit;
+    height: inherit;
 }
 
 .footer {
@@ -67,7 +69,8 @@ body {
     position: relative;
     text-align: center;
     overflow: hidden;
-    min-height: inherit;
+    height: inherit;
+    max-height: inherit;
 }
 
 .member__nick {

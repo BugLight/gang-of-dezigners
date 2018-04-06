@@ -8,20 +8,12 @@ export default {
         return {
             members: [
                 {
-                    nick: 'buglight',
-                    first: 'Даниил',
-                    last: 'Жуков',
-                    group: '',
-                    desc: '',
-                    photo: '/static/maket.jpg'
-                },
-                {
                     nick: 'talkytitan5127',
                     first: 'Павел',
                     last: '',
                     group: '',
                     desc: '',
-                    photo: '/static/maket.jpg'
+                    photo: '/static/img/talkytitan5127.jpg'
                 },
                 {
                     nick: 'pettro98',
@@ -29,7 +21,7 @@ export default {
                     last: '',
                     group: '',
                     desc: '',
-                    photo: '/static/maket.jpg'
+                    photo: '/static/img/pettro98.jpg'
                 },
                 {
                     nick: 'h1kk4',
@@ -37,7 +29,15 @@ export default {
                     last: '',
                     group: '',
                     desc: '',
-                    photo: '/static/maket.jpg'
+                    photo: '/static/img/h1kk42.jpg'
+                },
+                {
+                    nick: 'buglight',
+                    first: 'Даниил',
+                    last: 'Жуков',
+                    group: '',
+                    desc: '',
+                    photo: '/static/img/buglight.png'
                 }
             ]
         };
