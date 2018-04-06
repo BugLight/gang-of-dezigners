@@ -5,7 +5,8 @@ export default {
           <span class="footer__copyright">© 2018 Gang of Dezigners</span>
           <img
           class="footer__octopus"
-            src="/static/github-logo-black.png"
+
+            src="/static/img/github-logo-black.png"
             alt="Git:"
             height="30"
             width="30"
