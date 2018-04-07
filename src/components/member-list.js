@@ -68,15 +68,10 @@ export default {
                     last: 'Жуков',
                     second: 'Михайлович',
                     group: 'ИУ7-42',
-                    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing \
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore \
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud \
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo \
-                    consequat. Duis aute irure dolor in reprehenderit in \
-                    voluptate velit esse cillum dolore eu fugiat nulla \
-                    pariatur. Excepteur sint occaecat cupidatat non proident, \
-                    sunt in culpa qui officia deserunt mollit anim id est \
-                    laborum.',
+                    desc: 'Fullstack разработчик. Связующее звено в команде, помогаю собрать \
+                    самые разные технологии воедино и получить готовый продукт. Перфекционист, \
+                    и потому особенно ревностно отношусь к codestyle, так что не забывайте оставлять \
+                    новую строку в конце файла.',
                     photo: '/static/img/buglight.png',
                     inactive: false
                 }
