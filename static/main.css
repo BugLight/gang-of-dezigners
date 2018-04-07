@@ -13,7 +13,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   padding-top: calc(7vmin + 2.2vh);
-  padding-bottom: 60px;
   overflow-x: hidden;
   color: #fff;
 }
@@ -54,7 +53,7 @@ a:visited {
 
 .member-wrapper {
   height: 50vw;
-  max-height: calc(100vh - 60px - 7vmin - 2.2vh);
+  max-height: calc(100vh - 7vmin - 2.2vh);
   flex-basis: 25%;
 }
 
@@ -69,7 +68,7 @@ a:visited {
   display: flex;
   list-style: none;
   height: 50vw;
-  max-height: calc(100vh - 60px - 7vmin - 2.2vh);
+  max-height: calc(100vh - 7vmin - 2.2vh);
 }
 
 .member-list_active {
@@ -176,7 +175,7 @@ a:visited {
   bottom: 0;
   height: 60px;
   width: 100%;
-  position: fixed;
+  position: static;
   display: flex;
   justify-content: space-between;
   align-items: center;
