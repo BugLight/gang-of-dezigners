@@ -16,7 +16,15 @@ export default {
                     last: 'Горбунов',
                     second: 'Алексеевич',
                     group: 'ИУ8-41',
-                    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing \
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore \
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud \
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo \
+                    consequat. Duis aute irure dolor in reprehenderit in \
+                    voluptate velit esse cillum dolore eu fugiat nulla \
+                    pariatur. Excepteur sint occaecat cupidatat non proident, \
+                    sunt in culpa qui officia deserunt mollit anim id est \
+                    laborum.',
                     photo: '/static/img/talkytitan5127.jpg',
                     inactive: false
                 },
@@ -26,7 +34,15 @@ export default {
                     last: 'Толкунов',
                     second: 'Алексеевич',
                     group: 'ИУ8-41',
-                    desc: '',
+                    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing \
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore \
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud \
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo \
+                    consequat. Duis aute irure dolor in reprehenderit in \
+                    voluptate velit esse cillum dolore eu fugiat nulla \
+                    pariatur. Excepteur sint occaecat cupidatat non proident, \
+                    sunt in culpa qui officia deserunt mollit anim id est \
+                    laborum.',
                     photo: '/static/img/pettro98.jpg',
                     inactive: false
                 },
@@ -36,7 +52,15 @@ export default {
                     last: 'Долматов',
                     second: 'Дмитриевич',
                     group: 'ИУ8-41',
-                    desc: '',
+                    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing \
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore \
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud \
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo \
+                    consequat. Duis aute irure dolor in reprehenderit in \
+                    voluptate velit esse cillum dolore eu fugiat nulla \
+                    pariatur. Excepteur sint occaecat cupidatat non proident, \
+                    sunt in culpa qui officia deserunt mollit anim id est \
+                    laborum.',
                     photo: '/static/img/h1kk42.jpg',
                     inactive: false
                 },
@@ -46,7 +70,15 @@ export default {
                     last: 'Жуков',
                     second: 'Михайлович',
                     group: 'ИУ7-42',
-                    desc: '',
+                    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing \
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore \
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud \
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo \
+                    consequat. Duis aute irure dolor in reprehenderit in \
+                    voluptate velit esse cillum dolore eu fugiat nulla \
+                    pariatur. Excepteur sint occaecat cupidatat non proident, \
+                    sunt in culpa qui officia deserunt mollit anim id est \
+                    laborum.',
                     photo: '/static/img/buglight.png',
                     inactive: false
                 }
@@ -92,6 +124,13 @@ export default {
                 </div>
                 <div class="member-detail-wrapper">
                     <member-detail onReturn={this.unsetActive} info={this.activeMember}></member-detail>
+                    <a onClick={this.back} class="home_button">
+                        <img
+                            src="/static/img/home-button.png"
+                            alt="Home:"
+                            height="64"
+                            width="64"/>
+                    </a>
                 </div>
             </div> : null}
         </transition>;
