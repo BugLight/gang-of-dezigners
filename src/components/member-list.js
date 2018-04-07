@@ -124,13 +124,6 @@ export default {
                 </div>
                 <div class="member-detail-wrapper">
                     <member-detail onReturn={this.unsetActive} info={this.activeMember}></member-detail>
-                    <a onClick={this.back} class="home_button">
-                        <img
-                            src="/static/img/home-button.png"
-                            alt="Home:"
-                            height="64"
-                            width="64"/>
-                    </a>
                 </div>
             </div> : null}
         </transition>;
