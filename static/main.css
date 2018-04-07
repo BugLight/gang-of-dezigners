@@ -9,10 +9,13 @@
 }
 
 body {
-    background-color: white;
+    background-color: darkslategray;
     font-family: 'Roboto', sans-serif;
+    font-size: 1em;
     padding-top: calc(7vmin + 2.2vh);
     padding-bottom: 60px;
+    overflow-x: hidden;
+    color: #fff;
 }
 
 a {
@@ -49,6 +52,17 @@ a:visited {
     font-weight: 900;
 }
 
+.member-wrapper {
+    height: 50vw;
+    max-height: calc(100vh - 60px - 7vmin - 2.2vh);
+    flex-basis: 25%;
+}
+
+.member-detail-wrapper {
+    flex-basis: 75%;
+    position: relative;
+}
+
 .member-list {
     margin: 0;
     padding: 0;
@@ -58,11 +72,25 @@ a:visited {
     max-height: calc(100vh - 60px - 7vmin - 2.2vh);
 }
 
+.member-list_active {
+    display: flex;
+}
+
+.slide-enter, .slide-leave-to {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.slide-enter-active, .slide-leave-active {
+    transition: all 1s ease;
+}
+
 .member-list > li {
     display: block;
     flex-basis: 25%;
     max-height: inherit;
     height: inherit;
+    position: relative;
 }
 
 .member {
@@ -80,7 +108,10 @@ a:visited {
     margin: 0;
     bottom: 20px;
     width: 100%;
-
+    font-weight: 700;
+    color: #00b64f;
+    font-size: 2.5em;
+    text-shadow: 0 0 3px darkslategray;
 }
 
 .member__photo {
@@ -88,7 +119,11 @@ a:visited {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: -1;
+    transition: all 2s ease-out;
+}
+
+.member:hover > .member__photo {
+  transform: scale(1.05);
 }
 
 .member__filter {
@@ -100,8 +135,24 @@ a:visited {
     background-color: rgba(52,80,70,0.6);
 }
 
+.member-detail {
+    padding: 30px;
+}
+
+.member-detail__name, .member-detail__group {
+    font-weight: 300;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.member-detail__desc {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
 .fade-enter-active, .fade-leave-active {
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .fade-enter, .fade-leave-to {
@@ -131,10 +182,20 @@ a:visited {
 }
 
 .footer__github {
-  text-align: right;
-  padding-right: 20px;
+    text-align: right;
+    padding-right: 20px;
 }
 
 .footer__github > * {
     vertical-align: middle;
+}
+
+.home_button > img {
+    color: #37da7e;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 4px 20px -5px #000;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    float: right;
 }
