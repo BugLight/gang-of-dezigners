@@ -12,6 +12,7 @@ body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
     padding-top: calc(7vmin + 2.2vh);
+    padding-bottom: 60px;
 }
 
 a {
@@ -33,6 +34,7 @@ a:visited {
     background-color: #37da7e;
     box-shadow: 0px 4px 20px -5px #000;
     text-align: center;
+    z-index: 4;
 }
 
 @font-face {
@@ -104,6 +106,12 @@ a:visited {
 
 .fade-enter, .fade-leave-to {
     opacity: 0;
+}
+
+.about-us {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.5em;
 }
 
 .footer {
