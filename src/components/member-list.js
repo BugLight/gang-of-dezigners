@@ -14,6 +14,7 @@ export default {
                     nick: 'talkytitan5127',
                     first: 'Павел',
                     last: 'Горбунов',
+                    second: 'Алексеевич',
                     group: 'ИУ8-41',
                     desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                     photo: '/static/img/talkytitan5127.jpg',
@@ -22,8 +23,9 @@ export default {
                 {
                     nick: 'pettro98',
                     first: 'Петр',
-                    last: '',
-                    group: '',
+                    last: 'Толкунов',
+                    second: 'Алексеевич',
+                    group: 'ИУ8-41',
                     desc: '',
                     photo: '/static/img/pettro98.jpg',
                     inactive: false
@@ -31,8 +33,9 @@ export default {
                 {
                     nick: 'h1kk4',
                     first: 'Алексей',
-                    last: '',
-                    group: '',
+                    last: 'Долматов',
+                    second: 'Дмитриевич',
+                    group: 'ИУ8-41',
                     desc: '',
                     photo: '/static/img/h1kk42.jpg',
                     inactive: false
@@ -41,7 +44,8 @@ export default {
                     nick: 'buglight',
                     first: 'Даниил',
                     last: 'Жуков',
-                    group: '',
+                    second: 'Михайлович',
+                    group: 'ИУ7-42',
                     desc: '',
                     photo: '/static/img/buglight.png',
                     inactive: false
@@ -63,6 +67,9 @@ export default {
             this.members.forEach(m => {
                 m.inactive = false;
             });
+        },
+        unsetActive () {
+            this.activeMember = null;
         }
 
     },
@@ -84,7 +91,7 @@ export default {
                     <member info={this.activeMember}></member>
                 </div>
                 <div class="member-detail-wrapper">
-                    <member-detail info={this.activeMember}></member-detail>
+                    <member-detail onReturn={this.unsetActive} info={this.activeMember}></member-detail>
                 </div>
             </div> : null}
         </transition>;
