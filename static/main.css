@@ -152,6 +152,7 @@ a:visited {
     margin-top: 20px;
     margin-left: 20px;
     min-height: 60px;
+    white-space: pre-wrap;
 }
 
 .fade-enter-active, .fade-leave-active {
