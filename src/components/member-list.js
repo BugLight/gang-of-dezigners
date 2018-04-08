@@ -16,15 +16,7 @@ export default {
                     last: 'Горбунов',
                     second: 'Алексеевич',
                     group: 'ИУ8-41',
-                    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing \
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore \
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud \
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo \
-                    consequat. Duis aute irure dolor in reprehenderit in \
-                    voluptate velit esse cillum dolore eu fugiat nulla \
-                    pariatur. Excepteur sint occaecat cupidatat non proident, \
-                    sunt in culpa qui officia deserunt mollit anim id est \
-                    laborum.',
+                    desc: 'Backend - разработчик. Невропатолог серверной стороны сайтов. Целеустремленный, впитывающий знания программист. Ответственно подхожу к разработке, помогаю проводить Review-кода команды.\n\nStack-технологий = [\n\tBackend => [ Python, Perl, C++ ],\n\tFramework => [ Flask, Vue ],\n\tTechnology => [ Git, Heroku ]\n]',
                     photo: '/static/img/talkytitan5127.jpg',
                     inactive: false
                 },
@@ -34,10 +26,7 @@ export default {
                     last: 'Толкунов',
                     second: 'Алексеевич',
                     group: 'ИУ8-41',
-                    desc: 'Волею судьбы занимаюсь дизайном, хотя предпочел бы \
-                    серверную часть. Иногда интуитивно вставляю костыли, \
-                    которые непостижимым для него образом оказываются \
-                    рабочими. Не люблю Python из-за не-си-подобного синтаксиса.',
+                    desc: 'Волею судьбы занимаюсь дизайном, хотя предпочел бы серверную часть. Иногда интуитивно вставляю костыли, которые непостижимым для меня образом оказываются рабочими. Не люблю Python из-за не-си-подобного синтаксиса.',
                     photo: '/static/img/pettro98.jpg',
                     inactive: false
                 },
@@ -47,13 +36,7 @@ export default {
                     last: 'Долматов',
                     second: 'Дмитриевич',
                     group: 'ИУ8-41',
-                    desc: 'Прирожденный дизайнер. Могу сверстать вам сайт \
-                    за 5 минут на коленках в метро в час пик. Из любого тапка \
-                    с помощью HTML5/CSS3/JS/SASS(UKE)/GULP/React.JS/Node.js/Vue.js \
-                    сделаю вам шедевр мирового уровня за скромное вознаграждение. \
-                    Мастер merge конфликтов. Ношу ray ban, пью кофе из старбакса \
-                    и делаю подвороты. На вашу фичу “анимированные картинки” отвечаю \
-                    своим статическим дизайном и паром из вейпа в лицо.',
+                    desc: 'Прирожденный дизайнер. Могу сверстать вам сайт за 5 минут на коленках в метро в час пик. Из любого тапка c помощью HTML5/CSS3/JS/React.JS/Vue.js сделаю вам шедевр мирового уровня за скромное вознаграждение. Мастер merge конфликтов. Ношу ray ban и пью кофе из старбакса.',
                     photo: '/static/img/h1kk42.jpg',
                     inactive: false
                 },
@@ -63,10 +46,7 @@ export default {
                     last: 'Жуков',
                     second: 'Михайлович',
                     group: 'ИУ7-42',
-                    desc: 'Fullstack разработчик. Связующее звено в команде, помогаю собрать \
-                    самые разные технологии воедино и получить готовый продукт. Перфекционист, \
-                    и потому особенно ревностно отношусь к codestyle, так что не забывайте оставлять \
-                    новую строку в конце файла.',
+                    desc: 'Fullstack разработчик. Связующее звено в команде, помогаю собрать самые разные технологии воедино и получить готовый продукт. Перфекционист, и потому особенно ревностно отношусь к codestyle, так что не забывайте оставлять новую строку в конце файла.',
                     photo: '/static/img/buglight.png',
                     inactive: false
                 }
