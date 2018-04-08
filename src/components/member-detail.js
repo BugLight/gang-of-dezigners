@@ -2,7 +2,7 @@ export default {
     props: ['info'],
     computed: {
         fullname () {
-            return this.info.first + '  ' + this.info.last + '  ' + this.info.second;
+            return this.info.last + '  ' + this.info.first + '  ' +  this.info.second;
         }
     },
     methods: {
