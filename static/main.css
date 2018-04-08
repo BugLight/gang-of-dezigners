@@ -171,12 +171,14 @@ a:visited {
   padding: 2vh 4vw;
 }
 
+.content {
+    min-height: calc(100vh - 60px - 7vmin - 2.2vh);
+}
+
 .footer {
   background-color: #37da7e;
-  bottom: 0;
   height: 60px;
   width: 100%;
-  position: static;
   display: flex;
   justify-content: space-between;
   align-items: center;
